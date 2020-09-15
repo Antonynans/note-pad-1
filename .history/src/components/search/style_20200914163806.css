@@ -1,0 +1,26 @@
+h1{
+    color: red;
+}
+button{
+    padding: 10px;
+    border: none;
+    background-color: red;
+    color: white;
+    margin-bottom: ;
+}
+p{
+    font-weight: bold;
+}
+span{
+    color: red;
+}
+input{
+    height: 25px;
+    outline: red;
+}
+textarea{
+    height: 100px;
+}
+.note-div{
+    background: rgb(228, 212, 212);
+}

@@ -1,0 +1,38 @@
+import React from 'react';
+
+const AddNotes = ({note, setNote}) => {
+
+    const [title, setTitle] = useState("")
+    const onChangeHandler = (e)=>{
+        setNote({
+            ...note,
+            [e.target.name]: e.target.value
+        })
+    }
+
+    const onClickHandler =()=>{
+        const newNote = {
+            title: title,
+            description: description,
+            title: new Date().toLocaleDateString()
+        }
+        setNote({
+            ...note,
+            {title: title,
+            description: description,
+        time: new Date().toLocaleTimeString()}
+
+        })
+        console.log(note)
+    }
+    return(
+        <div>
+            <input placeholder="Title" name='title' onChange={onChangeHandler}/><br />
+            <textarea placeholder="Description" name='description' onChange={onChangeHandler}></textarea><br />
+            <button onClick={onClickHandler}>Add Note</button>
+        </div>
+    );
+    set
+}
+
+export default AddNotes;
